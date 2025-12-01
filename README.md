@@ -532,7 +532,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 - 📧 Email: ethannova002@gmail.com
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/location-tracker/issues)
+- 🐛 Issues: [GitHub Issues]([https://github.com/yourusername/location-tracker](https://github.com/EthanNova254/StealthTrack/issues)
 - 📖 Documentation: This README
 
 ## 🗺️ Roadmap
