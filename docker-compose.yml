@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: location-tracker
+    ports:
+      - "8080:80"
+    environment:
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-change_this_password_123}
+      - API_KEY=${API_KEY:-your_secure_api_key_here}
+      - IPINFO_TOKEN=${IPINFO_TOKEN:-}
+    volumes:
+      - ./data:/var/www/html/data
+      - ./uploads:/var/www/html/uploads
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - tracker-network
+
+networks:
+  tracker-network:
+    driver: bridge
