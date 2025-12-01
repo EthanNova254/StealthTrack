@@ -1,0 +1,79 @@
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Database files
+data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Uploaded files
+uploads/
+!uploads/.gitkeep
+
+# Logs
+*.log
+logs/
+error.log
+access.log
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Composer dependencies (if using)
+vendor/
+composer.lock
+
+# NPM dependencies (if using)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.cache
+
+# Backup files
+*.bak
+*.backup
+backup/
+backups/
+
+# OS specific
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Docker volumes
+docker-volumes/
+
+# Test files
+tests/coverage/
+phpunit.xml
+
+# Build files
+build/
+dist/
+
+# Session files
+sessions/
+*.sess
+
+# Security
+*.pem
+*.key
+*.crt
+ssl/
+
+# PHP specific
+.phpunit.result.cache
